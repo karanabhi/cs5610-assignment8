@@ -1,3 +1,49 @@
 @import "bootstrap";
 
-body { font-size: 20pt; }
+.bg-purple{
+  background-color: purple;
+}
+
+.sz-30{
+  font-size:30px;
+}
+
+.sz-22{
+  font-size:22px;
+}
+
+.clr-wht{
+  color:white;
+}
+
+.mrgn-pass{
+  margin-top:-6em;
+  margin-left: 40em;
+}
+
+.mrgn-btn{
+  margin-top: 1em;
+  margin-left:-17em;
+}
+
+.mrgn-eml{
+  margin-left:16em;
+}
+
+.reg-tbl{
+  margin-left:18em;
+  margin-top: 2em;
+}
+.tsk-btn{
+  margin-left:25em;
+  margin-top:1em;
+  margin-bottom:5em;
+}
+.chk-btn{
+  margin-left:30em;
+  margin-top:2em;
+}
+
+.tsk-tbl{
+  margin-top:2em;
+}

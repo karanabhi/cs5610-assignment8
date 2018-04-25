@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :spatracker,
-  ecto_repos: [Spatracker.Repo]
+config :newtasktracker,
+  ecto_repos: [Newtasktracker.Repo]
 
 # Configures the endpoint
-config :spatracker, SpatrackerWeb.Endpoint,
+config :newtasktracker, NewtasktrackerWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "u+gKEe0RcfMU6G8fPAdNfz9Ftlm4/1k9nIHUNU3l5akO5P7/2rtqRiqLtZ7k7TAi",
-  render_errors: [view: SpatrackerWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Spatracker.PubSub,
+  secret_key_base: "VhF0LFGo9MyOGdrLXazePDhHsh+dQ+uqGAgwx7trjJlvjSKZS7gIp5qZVYxNAmMl",
+  render_errors: [view: NewtasktrackerWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Newtasktracker.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

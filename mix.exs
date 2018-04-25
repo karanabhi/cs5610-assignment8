@@ -1,9 +1,9 @@
-defmodule Spatracker.Mixfile do
+defmodule Newtasktracker.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :spatracker,
+      app: :newtasktracker,
       version: "0.0.1",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
@@ -19,7 +19,7 @@ defmodule Spatracker.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Spatracker.Application, []},
+      mod: {Newtasktracker.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -40,7 +40,10 @@ defmodule Spatracker.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:comeonin, "~> 4.0"},
+      {:argon2_elixir, "~> 1.2"},
+      {:distillery, "~> 1.5", runtime: false}
     ]
   end
 

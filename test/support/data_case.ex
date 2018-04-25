@@ -1,4 +1,4 @@
-defmodule Spatracker.DataCase do
+defmodule Newtasktracker.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule Spatracker.DataCase do
 
   using do
     quote do
-      alias Spatracker.Repo
+      alias Newtasktracker.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Spatracker.DataCase
+      import Newtasktracker.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Spatracker.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Newtasktracker.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Spatracker.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Newtasktracker.Repo, {:shared, self()})
     end
 
     :ok
